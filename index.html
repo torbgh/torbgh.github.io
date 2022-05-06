@@ -4,18 +4,178 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>크로스미디어 구현</title>
+    <title>Document</title>
 </head>
 <body>
-    <script>
-        var divice = "win16|win32|win64|mac|macintel|linux";
-        if(navigator.platform) {
-            if(divice.indexOf(navigator.platform.toLowerCase()) < 0) {
-                location.href = "mobile.html";
-            } else {
-                location.href = "desktop.html";
-            }
-        }
-        </script>
+    <div class="wrap">
+        <header id="hd">
+            <div class="hd_wrap">
+                <!-- (a.logo>img)+(nav#gnb>ul>li*5>span+(ul.sum>li*4>a{메뉴$}))+(p#tnb>a{상단$}*3) -->
+                <a href="./index.html" class="logo"><img src="./" alt=""></a>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <span>모델</span>
+                            <ul class="sum">
+                                <li><a href="">ALL</a></li>
+                                <li><a href="">SEDAN</a></li>
+                                <li><a href="">SUV</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>구매</span>
+                            <ul class="sum">
+                                <li><a href="">구매 프로그램</a></li>
+                                <li><a href="">전기차 구매가이드</a></li>
+                                <li><a href="">제네시스 스펙트럼</a></li>
+                                <li><a href="">견적내기</a></li>
+                                <li><a href="">구매 상담 신청</a></li>
+                                <li><a href="">사양 조회하기</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>체험</span>
+                            <ul class="sum">
+                                <li><a href="">스페이스</a></li>
+                                <li><a href="">시승신청</a></li>
+                                <li><a href="">전시장 찾기</a></li>
+                                <li><a href="">제네시스 드라이빙 익스피리언스</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>멤버스</span>
+                            <ul class="sum">
+                                <li><a href="">제네시스 멤버십</a></li>
+                                <li><a href="">제네시스 커넥티드 서비스</a></li>
+                                <li><a href="">디지털 서비스</a></li>
+                                <li><a href="">차량관리 서비스</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>제네시스</span>
+                            <ul class="sum">
+                                <li><a href="">브랜드</a></li>
+                                <li><a href="">콘셉트카</a></li>
+                                <li><a href="">모터쇼</a></li>
+                                <li><a href="">로드트립</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <p id="tnb"><a href="">고객센터</a><a href="">마이페이지</a><a href="">검색</a></p>
+
+            </div>
+        </header>
+
+
+        <div id="content">
+            <figure id="vs">
+                <ul class="img_box">
+                    <li>
+                        <a href="">이미지1</a>
+                        <div class="tit_box">
+                            <h2 class="vs_tit"></h2>
+                            <p class="vs_com"></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">이미지2</a>
+                        <div class="tit_box">
+                            <h2 class="vs_tit"></h2>
+                            <p class="vs_com"></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">이미지3</a>
+                        <div class="tit_box">
+                            <h2 class="vs_tit"></h2>
+                            <p class="vs_com"></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">이미지4</a>
+                        <div class="tit_box">
+                            <h2 class="vs_tit"></h2>
+                            <p class="vs_com"></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">이미지5</a>
+                        <div class="tit_box">
+                            <h2 class="vs_tit"></h2>
+                            <p class="vs_com"></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">이미지6</a>
+                        <div class="tit_box">
+                            <h2 class="vs_tit"></h2>
+                            <p class="vs_com"></p>
+                        </div>
+                    </li>
+                </ul>
+            </figure>
+            <div class="grid_box">
+                <ul>
+                    <li class="col2">
+                        <a href="">사이트맵
+                            <h3 class="col_tit"></h3>
+                            <p class="col_com"></p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                    <li class="col2">
+                        <a href="">이용약관
+                            <h3 class="col_tit"></h3>
+                            <p class="col_com"></p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                    <li class="col2">
+                        <a href="">개인정보 처리방침
+                            <h3 class="col_tit"></h3>
+                            <p class="col_com"></p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                    <li class="col2">
+                        <a href="">저작권 안내
+                            <h3 class="col_tit"></h3>
+                            <p class="col_com"></p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                    <li class="col2">
+                        <a href="">보증안내
+                            <h3 class="col_tit"></h3>
+                            <p class="col_com"></p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                    <li class="col2">
+                        <a href="">자동차 교환 및 환불 중재 규정 안내
+                            <h3 class="col_tit"></h3>
+                            <p class="col_com"></p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                    <li class="col2">
+                        <a href="">하자 재발 통보 안내
+                            <h3 class="col_tit"></h3>
+                            <p class="col_com"></p>
+                            <span class="arrow"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+        <footer id="ft">
+
+
+        </footer>
+    </div>
 </body>
 </html>
